@@ -66,14 +66,21 @@ body {
 
 
     /*estilização da img do perfil*/
-    header img{
-        width: 120px;
-        height: 140px;
-        /*para deixar a img redonda*/
-        border-radius: 50%;
-        /*borda com cores*/
-        border: 5px solid #5BBE42;
-    }
+header img {
+  width: 120px;
+  height: 140px; /* Nota: Se a imagem ficar oval, use width e height iguais (ex: 120px por 120px) */
+  border-radius: 50%;
+  border: 5px solid #5BBE42;
+
+  /* --- SOLUÇÃO: EFEITO SHADOW NEON VERDE --- */
+  box-shadow: 
+    0 0 10px #5BBE42,   /* Brilho interno/próximo mais forte */
+    0 0 25px #5BBE42,   /* Brilho médio que expande a cor */
+    0 0 45px rgba(91, 190, 66, 0.4); /* Brilho externo bem esfumaçado e suave */
+    
+  transition: box-shadow 0.3s ease; /* Deixa o efeito suave caso queira animar no hover */
+}
+
 
 
                         /*TEXTOS PRINCIPAIS*/  
@@ -87,6 +94,7 @@ body {
         text-align: center;
         color: #51dfff;
         box-sizing: border-box;
+        
     }
 
     .center2{
@@ -227,7 +235,103 @@ body {
   object-fit: contain;
 }
 
-/*WHATSSAPPP*/
+.card2verde {
+  box-shadow: #41fd44 0px 0px 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.807);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(65, 253, 68, 0.4);
+  box-sizing: border-box; /* Garante que o cálculo de tamanho inclua o padding */
+
+  /* --- ALTERAÇÕES PARA AUMENTAR E DAR LEGIBILIDADE --- */
+  width: 120%;           /* Faz a caixa preta ocupar quase toda a largura do card verde */
+  margin: 10px auto 0;  /* Centraliza a caixa horizontalmente e afasta da foto acima */
+  margin-left: -10%;
+  padding: 25px -5px;   /* Aumenta o espaço interno (20px em cima/baixo e 15px nas laterais) */
+  
+  /* Ajuste opcional para a fonte Impact não ficar gigante no espaço */
+  font-size: 0.95rem;   
+  line-height: 1.4;     /* Dá um espaço confortável entre as linhas do texto */
+}
+
+
+.card2verde {
+  box-shadow: #41fd44 0px 0px 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.807);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(65, 253, 68, 0.4);
+  box-sizing: border-box; /* Garante que o cálculo de tamanho inclua o padding */
+
+  /* --- ALTERAÇÕES PARA AUMENTAR E DAR LEGIBILIDADE --- */
+  width: 120%;           /* Faz a caixa preta ocupar quase toda a largura do card verde */
+  margin: 10px auto 0;  /* Centraliza a caixa horizontalmente e afasta da foto acima */
+  margin-left: -10%;
+  padding: 25px -5px;   /* Aumenta o espaço interno (20px em cima/baixo e 15px nas laterais) */
+  
+  /* Ajuste opcional para a fonte Impact não ficar gigante no espaço */
+  font-size: 0.95rem;   
+  line-height: 1.4;     /* Dá um espaço confortável entre as linhas do texto */
+}
+
+
+.card2azul {
+  box-shadow: #41befd 0px 0px 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.807);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgb(3, 218, 238);
+  box-sizing: border-box; /* Garante que o cálculo de tamanho inclua o padding */
+
+  /* --- ALTERAÇÕES PARA AUMENTAR E DAR LEGIBILIDADE --- */
+  width: 120%;           /* Faz a caixa preta ocupar quase toda a largura do card verde */
+  margin: 10px auto 0;  /* Centraliza a caixa horizontalmente e afasta da foto acima */
+  margin-left: -10%;
+  padding: 25px -5px;   /* Aumenta o espaço interno (20px em cima/baixo e 15px nas laterais) */
+  
+  /* Ajuste opcional para a fonte Impact não ficar gigante no espaço */
+  font-size: 0.95rem;   
+  line-height: 1.4;     /* Dá um espaço confortável entre as linhas do texto */
+}
+
+
+.card2vermelho {
+  box-shadow: #fd4141 0px 0px 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(163, 46, 46, 0.807);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgb(238, 3, 3);
+  box-sizing: border-box; /* Garante que o cálculo de tamanho inclua o padding */
+
+  /* --- ALTERAÇÕES PARA AUMENTAR E DAR LEGIBILIDADE --- */
+  width: 120%;           /* Faz a caixa preta ocupar quase toda a largura do card verde */
+  margin: 10px auto 0;  /* Centraliza a caixa horizontalmente e afasta da foto acima */
+  margin-left: -10%;
+  padding: 25px -5px;   /* Aumenta o espaço interno (20px em cima/baixo e 15px nas laterais) */
+  
+  /* Ajuste opcional para a fonte Impact não ficar gigante no espaço */
+  font-size: 0.95rem;   
+  line-height: 1.4;     /* Dá um espaço confortável entre as linhas do texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              /*WHATSSAPPP*/
 
 /* ESTILO PRINCIPAL DO BOTÃO */
 .btn-whatsapp {
